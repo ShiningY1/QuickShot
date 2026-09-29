@@ -1,6 +1,6 @@
-# QuickShot — 原有 WPF 项目修复版
+# QuickShot
 
-继续使用 Windows x64、.NET 8、WPF + WinForms 框选和本地 PaddleOCR，没有迁移 UI 框架。
+使用 Windows x64、.NET 8、WPF + WinForms 框选和本地 PaddleOCR，没有迁移 UI 框架。
 
 ## 构建
 
