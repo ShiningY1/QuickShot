@@ -1,0 +1,17 @@
+<Window x:Class="QuickShot.Windows.OcrWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="QuickShot 文字识别" Icon="/Assets/QuickShot.ico" SizeToContent="Height"
+ WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip">
+ <Grid Margin="16">
+  <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <ScrollViewer x:Name="StatusScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><TextBlock x:Name="Status" Text="准备识别…" TextWrapping="Wrap" Margin="0,0,0,8"/></ScrollViewer>
+  <ProgressBar x:Name="Progress" Grid.Row="1" IsIndeterminate="True" Height="4" Margin="0,0,0,10"/>
+  <TextBox x:Name="ResultText" Grid.Row="2" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap"
+   VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"/>
+  <WrapPanel Grid.Row="3" HorizontalAlignment="Right">
+   <Button x:Name="CopyButton" Content="复制文字" IsEnabled="False" Click="Copy_Click"/>
+   <Button x:Name="CancelButton" Content="取消识别" Click="Cancel_Click"/>
+  </WrapPanel>
+ </Grid>
+</Window>

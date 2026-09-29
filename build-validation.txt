@@ -1,0 +1,15 @@
+2026-09-29
+Environment: Linux x64; .NET SDK 8.0.425; MSBuild 17.11.48
+Target: net8.0-windows10.0.19041.0 / win-x64 / Release
+Command: MSBuild.dll QuickShot.csproj -t:Rebuild -p:Configuration=Release -p:EnableWindowsTargeting=true
+
+  QuickShot -> <project>/bin/Release/net8.0-windows10.0.19041.0/win-x64/QuickShot.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:08.75
+
+Windows GUI and native OCR runtime tests: NOT EXECUTED (Linux host).
+Static checks: XML/XAML parsed; icon references complete; LocalV5 3.3.1 locked; no OCR character filtering; unified default path.
